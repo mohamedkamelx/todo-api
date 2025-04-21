@@ -12,13 +12,13 @@ curl -X POST http://localhost:8000/mainpage/api/token/refresh/ \
 
 ####
 
-curl -X GET http://localhost:8000/mainpage/profile/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
+curl -X GET http://localhost:8000/mainpage/profile \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjYxMTE2LCJpYXQiOjE3NDUyNjAyMTYsImp0aSI6ImM3ZDhkZDQ0OWMzMjRkM2I4MGJkYmY5MWFiOGY2YjNmIiwidXNlcl9pZCI6MX0.gKYZ2zdc-w1h427VZPHUZtzpheCJH2OxUj_HzSJbvbk"
 
 ###
 
 curl -X GET http://localhost:8000/mainpage/task/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjYxMTE2LCJpYXQiOjE3NDUyNjAyMTYsImp0aSI6ImM3ZDhkZDQ0OWMzMjRkM2I4MGJkYmY5MWFiOGY2YjNmIiwidXNlcl9pZCI6MX0.gKYZ2zdc-w1h427VZPHUZtzpheCJH2OxUj_HzSJbvbk"
 
 
 ###
@@ -33,7 +33,7 @@ curl -X POST http://localhost:8000/mainpage/api/register/ \
 
 curl -X POST http://localhost:8000/mainpage/api/token/ \
   -H "Content-Type: application/json" \
-  -d '{"username": "nono7", "password": "12bjxhsdv()K3"}'
+  -d '{"username": "testuser", "password": "testpass"}'
 
 ####
 
@@ -42,12 +42,7 @@ curl -X GET http://localhost:8000/mainpage/myprofile/ \
 
 ###
 
-curl -X GET http://localhost:8000/mainpage/task/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MTkyMjgyLCJpYXQiOjE3NDUxOTE5ODIsImp0aSI6ImUxYjRjZDQyNGE5NzQwZGFiYTU2ZmQ0NTE5OTIwN2ZmIiwidXNlcl9pZCI6MTJ9.2f2GTfYtabBmImeY-NT_vyKUkS2kKcncq1xuj3QqR5E"
-
-###
-
 curl -X POST http://localhost:8000/mainpage/task/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjU2MzUwLCJpYXQiOjE3NDUyNTU0NTAsImp0aSI6IjBhNTIwNTY0NzUzMjQwNWJiOTEwODQzMzk2NDJjY2RmIiwidXNlcl9pZCI6MTN9.93qrZ6yEdA8M9PRmAmBVQGfI7wwBAI1I0RXD-WI2LYM"
   -H "Content-Type: application/json" \
-  -d '{"title": "SALAM ALYKOM", "description": "PROJECT FINISHED"}'
+  -d '{"title": "homework", "description": "signals"}'
