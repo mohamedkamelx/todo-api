@@ -26,7 +26,9 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
 class ProfileSerializer(serializers.ModelSerializer):
     user=Userserializer(read_only=True)
-    tasks=TaskSerializer(many=True, read_only=True)  # Access the reverse relation directly
+    tasks=TaskSerializer(many=True, read_only=True) 
     class Meta:
         model=Profile
         fields=['user','tasks']
+
+    

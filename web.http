@@ -13,12 +13,12 @@ curl -X POST http://localhost:8000/mainpage/api/token/refresh/ \
 ####
 
 curl -X GET http://localhost:8000/mainpage/profile/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MTkyMTc1LCJpYXQiOjE3NDUxOTE4NzUsImp0aSI6IjA2YzFiYTVlNWJkYTQ1OGM4MzA4ZWE4OTk5OWJmNjc2IiwidXNlcl9pZCI6MX0.RMIQzktKwTwsx8G7K70uZ8eDWe-vjak36IHalJ2GvcI"
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
 
 ###
 
 curl -X GET http://localhost:8000/mainpage/task/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MTcxNTMzLCJpYXQiOjE3NDUxNzEyMzMsImp0aSI6ImY0OGFiODRiOGM2ZTRjNzA5MGFlMWVlN2VhMWE5NTEwIiwidXNlcl9pZCI6MX0.DVNe8QSDshBeLEEoDMU8bz7GQcyAnQHEt9PjDAsa804"
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
 
 
 ###
@@ -37,8 +37,8 @@ curl -X POST http://localhost:8000/mainpage/api/token/ \
 
 ####
 
-curl -X GET http://localhost:8000/mainpage/profile/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MTkyMjgyLCJpYXQiOjE3NDUxOTE5ODIsImp0aSI6ImUxYjRjZDQyNGE5NzQwZGFiYTU2ZmQ0NTE5OTIwN2ZmIiwidXNlcl9pZCI6MTJ9.2f2GTfYtabBmImeY-NT_vyKUkS2kKcncq1xuj3QqR5E"
+curl -X GET http://localhost:8000/mainpage/myprofile/ \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
 
 ###
 
@@ -48,6 +48,6 @@ curl -X GET http://localhost:8000/mainpage/task/ \
 ###
 
 curl -X POST http://localhost:8000/mainpage/task/ \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MTkzMDU5LCJpYXQiOjE3NDUxOTI3NTksImp0aSI6IjU3MGI4YWQzZjAzYTQ0MmJhOWNmMWMxOWUyYWIyN2IxIiwidXNlcl9pZCI6MTJ9.RzcAoS_V2N6Sq7mGPAAvVCSB9vLss3K0O07FaRERp1o"
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ1MjQxNzAyLCJpYXQiOjE3NDUyNDA4MDIsImp0aSI6ImFiZDhlNDk5ZmMwNzRhNGNiZjVkMTk5YzdiNmE2NzJlIiwidXNlcl9pZCI6MTJ9.x8cMWrUXSc4R5QkYxvhvY8mmgaKIBbPaMiegfRVfcNQ"
   -H "Content-Type: application/json" \
-  -d '{"title": "احا", "description": "12bjxhsdv()K3"}'
+  -d '{"title": "SALAM ALYKOM", "description": "PROJECT FINISHED"}'

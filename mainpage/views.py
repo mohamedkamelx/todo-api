@@ -29,27 +29,16 @@ class ProfilViewSet (viewsets.ReadOnlyModelViewSet):
     permission_classes=[IsAdminUser]
     authentication_classes=[JWTAuthentication]
 
-"""    
-class ProfileView(APIView):
+
+class MyProfileView(APIView):
     permission_classes=[IsAuthenticated]
     authentication_classes=[JWTAuthentication]
-    def get(self,request):
-        if request.user.is_staff:
-            profiles = Profile.objects.select_related('user').prefetch_related('user__tasks')
-            serializer = ProfileSerializer(profiles,many=True)
-            return Response(serializer.data)
-        return Response('you are not allowed 🖕',404)
 
-    def get(self,request,pk):
-        try:
-            user=User.objects.get(pk=pk)
-        except:
-            return Response('doesnt exist',404)
-        if request.user==user:
-            profile = Profile.objects.get(user=user)
-            serializer = ProfileSerializer(profile)
-            return Response(serializer.data)
-        return Response('you are not allowed 🖕',404)"""
+    def get(self,request):
+        profile = Profile.objects.prefetch_related('tasks').get(user=request.user)
+        serializer = ProfileSerializer(profile, context={'request': request})
+        print(serializer.data)
+        return Response(serializer.data)
 
 
 class UserCreate(APIView):
