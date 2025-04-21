@@ -178,13 +178,11 @@ curl -X POST http://localhost:8000/mainpage/task/ \
       "id": 1,
       "title": "Task 1",
       "description": "Description for task 1",
-      "created_at": "2025-04-20T14:30:00Z"
     },
     {
       "id": 2,
       "title": "Task 2",
       "description": "Description for task 2",
-      "created_at": "2025-04-21T10:15:00Z"
     }
   ]
 }
@@ -202,14 +200,12 @@ curl -X POST http://localhost:8000/mainpage/task/ \
       "id": 1,
       "title": "Task 1",
       "description": "Task description",
-      "created_at": "2025-04-20T14:30:00Z",
       "user": 1
     },
     {
       "id": 2,
       "title": "Task 2",
       "description": "Another description",
-      "created_at": "2025-04-21T10:15:00Z",
       "user": 1
     }
     // ...more tasks (up to page_size)
