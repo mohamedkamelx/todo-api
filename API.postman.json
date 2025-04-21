@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "560695b9-cbd9-427d-a3a0-f296ee1ab036",
+		"name": "Task Management API",
+		"description": "Postman collection for testing the Django Task Management API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44261737"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"testpass\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/mainpage/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtain Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"testpass\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/mainpage/api/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\": \"<your_refresh_token>\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/mainpage/api/token/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"api",
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <access_token>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/mainpage/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <access_token>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Sample Task\",\n    \"description\": \"This is a task\",\n    \"status\": \"pending\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/mainpage/task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profiles (Admin Only)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <admin_access_token>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/mainpage/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mainpage",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
