@@ -1,6 +1,4 @@
----
 
-```markdown
 # Task Management API
 
 A Django REST Framework-based API for managing users, tasks, and user profiles with secure JWT authentication and role-based access control.
